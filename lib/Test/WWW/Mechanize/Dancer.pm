@@ -46,13 +46,13 @@ has mech        => (
 
 =head1 SYNOPSIS
 
-use MyDancerApp;
-use Test::WWW::Mechanize::Dancer;
+    use MyDancerApp;
+    use Test::WWW::Mechanize::Dancer;
 
-# Get your standard Test::WWW::Mechanize object
-my $mech = Test::WWW::Mechanize::Dancer->new->mech;
-# Run standard Test::WWW::Mechanize tests
-$mech->get_ok('/');
+    # Get your standard Test::WWW::Mechanize object
+    my $mech = Test::WWW::Mechanize::Dancer->new->mech;
+    # Run standard Test::WWW::Mechanize tests
+    $mech->get_ok('/');
 
 =head1 DESCRIPTION
 
