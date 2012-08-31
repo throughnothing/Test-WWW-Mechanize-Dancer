@@ -29,8 +29,8 @@ has mech        => (
                     appdir => $self->appdir,
                     envdir => $self->envdir || path($self->appdir, 'environments'),
                     confdir => $self->confdir || $self->appdir,
-                    public => $self->public || $self->appdir . '/public',
-                    views => $self->views || $self->appdir . '/views',
+                    public => $self->public || path($self->appdir,  '/public'),
+                    views => $self->views || path($self->appdir, '/views' ),
                     environment => $self->environment,
                 );
                 my $request = Dancer::Request->new( env => $env );
