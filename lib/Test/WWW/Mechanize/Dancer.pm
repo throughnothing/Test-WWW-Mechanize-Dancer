@@ -52,7 +52,9 @@ has mech        => (
     use Test::WWW::Mechanize::Dancer;
 
     # Get your standard Test::WWW::Mechanize object
-    my $mech = Test::WWW::Mechanize::Dancer->new->mech;
+    my $mech = Test::WWW::Mechanize::Dancer->new(
+        # settings here if required
+    )->mech;
     # Run standard Test::WWW::Mechanize tests
     $mech->get_ok('/');
 
