@@ -1,0 +1,72 @@
+==================================================
+Changes from 2011-09-01 00:00:00 +0000 to present.
+==================================================
+
+------------------------------------------
+version 0.002 at 2012-08-31 05:14:56 +0000
+------------------------------------------
+
+  Change: 9f0f4d0d4ead6109fd7037946a29e8482b154e0f
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-08-30 22:13:23 +0000
+
+    add .gitignore 
+
+  Change: 2a498dd1bab74627d25ac4cabd3f0692301415b4
+  Author: Grant McLean <grant@catalyst.net.nz>
+  Date : 2012-08-30 22:06:58 +0000
+
+    update POD to note caller is responsible for loading custom mech
+    class 
+
+  Change: e9bc2fee39d5d7f70d9ace4ab7e12dbd05c03bfb
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-08-30 22:06:58 +0000
+
+    Add Tests and Module::Load. 
+
+  Change: 0eee790a0b1f702c5410a08bbf61bc688d7fd437
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-08-30 22:06:58 +0000
+
+    Update the dist.ini and add Makefile + Readme 
+
+  Change: 66144994e2b053be10375db88fc90992cbea646b
+  Author: Grant McLean <grant@catalyst.net.nz>
+  Date : 2012-08-30 22:06:58 +0000
+
+    allow user to override class for creating mech object 
+
+  Change: 3cbaad09af87936e28d37633a6c0f7ffd59f2212
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2012-08-30 20:19:58 +0000
+
+    Use Dancer 'path' for other app paths. 
+
+  Change: ffe22f4b6dfbc77a53930adafe34705f0d3245e6
+  Author: Grant McLean <grant@catalyst.net.nz>
+  Date : 2012-08-31 14:45:13 +0000
+
+    improve POD with respect to where the settings go 
+
+  Change: 4d49ded31678e74e73b8aaa7c4d7aa1da229bfac
+  Author: Grant McLean <grant@catalyst.net.nz>
+  Date : 2012-08-31 14:44:39 +0000
+
+    set envdir after setting appdir 
+
+  Change: 09f93443e5815421185cc9b93532f06e54fad6c8
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2011-10-28 14:36:34 +0000
+
+    update docs 
+
+  Change: b5c09536bae5cef04d0a2b1a3511e3594325917f
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2011-10-28 13:35:52 +0000
+
+    Initial commit 
+
+================
+End of releases.
+================

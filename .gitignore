@@ -1,0 +1,9 @@
+*~
+*.swp
+blib
+Makefile
+Makefile.old
+.build
+Test-WWW-Mechanize-Dancer*
+MYMETA*
+pm_to_blib
