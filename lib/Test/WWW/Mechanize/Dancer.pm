@@ -14,6 +14,7 @@ has confdir     => (is => 'ro');
 has environment => (is => 'ro', default => 'test');
 has public      => (is => 'ro');
 has views       => (is => 'ro');
+has mech_class  => (is => 'ro', default => 'Test::WWW::Mechanize::PSGI');
 
 has mech        => (
     is      => 'ro',
@@ -21,7 +22,7 @@ has mech        => (
     default => sub {
         my ($self) = @_;
 
-        my $m = Test::WWW::Mechanize::PSGI->new(
+        my $m = $self->mech_class->new(
             app => sub {
                 my $env = shift;
                 set (
@@ -83,6 +84,13 @@ Set the dancer confdir.  Will default to appdir if unspecified.
 
 Allows you to set the Dancer environment to run your app in.  Defaults to
 'test'
+
+=head2 mech_class
+
+Allows you to override the class used to instantiate the user agent object.
+Use this to invoke your own class with project-specific test-helper methods.
+Defaults to 'Test::WWW::Mechanize::PSGI' - which your class should inherit
+from.
 
 =head2 public
 
