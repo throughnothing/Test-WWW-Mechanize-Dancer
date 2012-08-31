@@ -4,7 +4,7 @@ Test::WWW::Mechanize::Dancer - Wrapper to easily use Test::WWW::Mechanize with y
 
 # VERSION
 
-version 0.002
+version 0.003
 
 # SYNOPSIS
 
@@ -60,7 +60,7 @@ Allows you to set the Dancer environment to run your app in.  Defaults to
 Allows you to override the class used to instantiate the user agent object.
 Use this to invoke your own class with project-specific test-helper methods.
 Defaults to 'Test::WWW::Mechanize::PSGI' - which your class should inherit
-from.
+from.  Note, it is your responsibility to 'require' the class.
 
 ## public
 

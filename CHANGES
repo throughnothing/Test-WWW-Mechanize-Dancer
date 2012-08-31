@@ -3,33 +3,29 @@ Changes from 2011-09-01 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.002 at 2012-08-31 05:14:56 +0000
+version 0.003 at 2012-08-31 05:18:28 +0000
 ------------------------------------------
 
-  Change: 9f0f4d0d4ead6109fd7037946a29e8482b154e0f
-  Author: William Wolf <throughnothing@gmail.com>
-  Date : 2012-08-30 22:13:23 +0000
-
-    add .gitignore 
-
-  Change: 2a498dd1bab74627d25ac4cabd3f0692301415b4
+  Change: 296551cf7941cf1e06527c6db32a97d163772f0f
   Author: Grant McLean <grant@catalyst.net.nz>
-  Date : 2012-08-30 22:06:58 +0000
+  Date : 2012-08-30 22:16:55 +0000
 
     update POD to note caller is responsible for loading custom mech
     class 
 
-  Change: e9bc2fee39d5d7f70d9ace4ab7e12dbd05c03bfb
+  Change: 15b3d8718433232ef3656dfc0c63d89000ae524e
   Author: William Wolf <throughnothing@gmail.com>
-  Date : 2012-08-30 22:06:58 +0000
+  Date : 2012-08-30 22:16:55 +0000
 
     Add Tests and Module::Load. 
 
-  Change: 0eee790a0b1f702c5410a08bbf61bc688d7fd437
+  Change: e992d992825488c3b1f62dcb039747e5f5a87252
   Author: William Wolf <throughnothing@gmail.com>
-  Date : 2012-08-30 22:06:58 +0000
+  Date : 2012-08-30 22:16:46 +0000
 
-    Update the dist.ini and add Makefile + Readme 
+    Update the dist.ini and add Makefile + Readme + Changes
+
+    Also add .gitignore. 
 
   Change: 66144994e2b053be10375db88fc90992cbea646b
   Author: Grant McLean <grant@catalyst.net.nz>
