@@ -11,7 +11,12 @@ use ExtUtils::MakeMaker 6.30;
 my %WriteMakefileArgs = (
   "ABSTRACT" => "Wrapper to easily use Test::WWW::Mechanize with your Dancer apps",
   "AUTHOR" => "William Wolf <throughnothing\@gmail.com>, Grant McLean <grantm\@cpan.org>",
-  "BUILD_REQUIRES" => {},
+  "BUILD_REQUIRES" => {
+    "File::Find" => 0,
+    "File::Temp" => 0,
+    "Test::More" => 0,
+    "base" => 0
+  },
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"
   },
@@ -20,9 +25,13 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Test::WWW::Mechanize::Dancer",
   "PREREQ_PM" => {
+    "Cwd" => 0,
     "Dancer" => 0,
+    "Module::Load" => 0,
     "Moose" => 0,
-    "Test::WWW::Mechanize::PSGI" => 0
+    "Test::WWW::Mechanize::PSGI" => 0,
+    "strict" => 0,
+    "warnings" => 0
   },
   "VERSION" => "0.002",
   "test" => {

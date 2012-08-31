@@ -3,6 +3,7 @@ use strict;
 use warnings;
 use Cwd;
 use Dancer qw(:tests :moose);
+use Module::Load qw(load);
 use Moose;
 use Test::WWW::Mechanize::PSGI;
 
@@ -23,6 +24,7 @@ has mech        => (
     default => sub {
         my ($self) = @_;
 
+        load $self->mech_class;
         my $m = $self->mech_class->new(
             app => sub {
                 my $env = shift;
