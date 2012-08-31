@@ -9,6 +9,7 @@ use Test::WWW::Mechanize::PSGI;
 # VERSION
 
 has appdir      => (is => 'ro', default => getcwd );
+has envdir      => (is => 'ro');
 has agent       => (is => 'ro', default => 'Dancer Tests');
 has confdir     => (is => 'ro');
 has environment => (is => 'ro', default => 'test');
@@ -26,6 +27,7 @@ has mech        => (
                 my $env = shift;
                 set (
                     appdir => $self->appdir,
+                    envdir => $self->envdir || path($self->appdir, 'environments'),
                     confdir => $self->confdir || $self->appdir,
                     public => $self->public || $self->appdir . '/public',
                     views => $self->views || $self->appdir . '/views',
@@ -78,6 +80,13 @@ Allows you to set the user agent of the Mechanizer.
 =head2 confdir
 
 Set the dancer confdir.  Will default to appdir if unspecified.
+
+=head2 envdir
+
+Allows you to set the directory where Dancer should look for the config files
+for each environment.  Defaults to 'environments' under appdir.  Note if your
+app uses $ENV{DANCER_ENVDIR} you should explicitly pass that value using this
+option.
 
 =head2 environment
 
