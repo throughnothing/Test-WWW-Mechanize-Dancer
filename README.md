@@ -4,7 +4,7 @@ Test::WWW::Mechanize::Dancer - Wrapper to easily use Test::WWW::Mechanize with y
 
 # VERSION
 
-version 0.003
+version 0.0100
 
 # SYNOPSIS
 
@@ -47,7 +47,7 @@ Set the dancer confdir.  Will default to appdir if unspecified.
 
 Allows you to set the directory where Dancer should look for the config files
 for each environment.  Defaults to 'environments' under appdir.  Note if your
-app uses $ENV{DANCER_ENVDIR} you should explicitly pass that value using this
+app uses $ENV{DANCER\_ENVDIR} you should explicitly pass that value using this
 option.
 
 ## environment
@@ -55,7 +55,7 @@ option.
 Allows you to set the Dancer environment to run your app in.  Defaults to
 'test'
 
-## mech_class
+## mech\_class
 
 Allows you to override the class used to instantiate the user agent object.
 Use this to invoke your own class with project-specific test-helper methods.
