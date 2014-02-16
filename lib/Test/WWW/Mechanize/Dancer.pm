@@ -2,7 +2,7 @@ package Test::WWW::Mechanize::Dancer;
 use strict;
 use warnings;
 use Cwd;
-use Dancer qw(:tests :moose);
+use Dancer qw(:tests :moose !load);
 use Module::Load qw(load);
 use Moose;
 use Test::WWW::Mechanize::PSGI;
