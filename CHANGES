@@ -3,8 +3,14 @@ Changes from 2013-02-16 00:00:00 +0000 to present.
 ==================================================
 
 -------------------------------------------
-version 0.0100 at 2014-02-16 22:54:30 +0000
+version 0.0100 at 2014-02-16 22:55:08 +0000
 -------------------------------------------
+
+  Change: 5ee55afcefe01335d35daddcc2e60af95c5a5c4a
+  Author: William Wolf <throughnothing@gmail.com>
+  Date : 2014-02-16 14:54:53 +0000
+
+    Bump version 
 
   Change: 0e94248185032aff996c6cfeeb503e40b2f72389
   Author: William Wolf <throughnothing@gmail.com>
